@@ -1,0 +1,48 @@
+{
+  "model": "FallDetector LSTM",
+  "architecture": "2-layer LSTM, 128 hidden, dropout=0.3, LayerNorm",
+  "parameters": 201859,
+  "training": {
+    "epochs": 38,
+    "best_epoch": 23,
+    "training_time_seconds": 11.7,
+    "optimizer": "AdamW (lr=1e-3, weight_decay=1e-4)",
+    "loss": "CrossEntropyLoss (class-weighted)"
+  },
+  "dataset": {
+    "sources": [
+      "UR Fall Detection (70)",
+      "Le2i (140)",
+      "Synthetic (3000)"
+    ],
+    "total_samples": 17502,
+    "train": 14001,
+    "val": 1750,
+    "test": 1751
+  },
+  "metrics": {
+    "accuracy": 0.9817,
+    "macro_f1": 0.9779,
+    "macro_auc": 0.9979,
+    "per_class": {
+      "Normal": {
+        "precision": 0.9855,
+        "recall": 0.9873,
+        "f1": 0.9864,
+        "auc": 0.9975
+      },
+      "Falling": {
+        "precision": 0.9969,
+        "recall": 0.9525,
+        "f1": 0.9742,
+        "auc": 0.9977
+      },
+      "Fallen": {
+        "precision": 0.9534,
+        "recall": 0.9935,
+        "f1": 0.9731,
+        "auc": 0.9986
+      }
+    }
+  }
+}

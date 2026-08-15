@@ -1,0 +1,16 @@
+[project]
+name = "fall-detection"
+version = "1.0.0"
+description = "Elderly Fall Detection System using YOLO Pose + LSTM"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]

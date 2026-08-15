@@ -1,0 +1,21 @@
+# BoT-SORT Tracker Configuration for Fall Detection
+# Optimized for indoor elderly monitoring scenarios
+
+tracker_type: botsort
+
+# Tracking thresholds
+track_high_thresh: 0.5      # High confidence detection threshold
+track_low_thresh: 0.1       # Low confidence detection threshold
+new_track_thresh: 0.6       # Threshold for creating new tracks
+track_buffer: 60            # Frames to keep lost tracks (2s at 30fps)
+match_thresh: 0.8           # Matching threshold for associations
+fuse_score: true            # Fuse detection score with motion/IoU for matching
+
+# BoT-SORT specific
+gmc_method: sparseOptFlow   # Global motion compensation method
+proximity_thresh: 0.5       # Spatial proximity threshold
+appearance_thresh: 0.25     # Appearance similarity threshold
+
+# Re-ID
+with_reid: false            # Disable ReID for speed
+model: auto                 # ReID model (auto = use detector features)

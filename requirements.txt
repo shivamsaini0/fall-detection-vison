@@ -1,0 +1,26 @@
+# Fall Detection System - Dependencies
+# Core ML
+ultralytics>=8.4.0
+opencv-python>=4.13.0
+torch>=2.10.0
+torchvision>=0.25.0
+numpy>=2.0.0
+
+# Data & ML utilities
+scikit-learn>=1.8.0
+matplotlib>=3.10.0
+seaborn>=0.13.0
+tqdm>=4.67.0
+
+# Web UI
+streamlit>=1.56.0
+gradio>=6.10.0
+
+# API
+fastapi>=0.135.0
+uvicorn>=0.44.0
+python-multipart>=0.0.24
+
+# Testing & Quality
+pytest>=9.0.0
+ruff>=0.15.0

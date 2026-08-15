@@ -1,0 +1,39 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.ruff_cache/
+
+# Data files (too large for git)
+data/raw/
+data/processed/
+data/splits/
+*.npy
+
+# YOLO model weights (downloaded automatically, re-downloadable)
+yolo*.pt
+
+# Video files
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Test/output artifacts
+output/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp
+tmp/
+*.tmp
